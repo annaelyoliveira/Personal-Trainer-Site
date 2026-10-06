@@ -1,0 +1,192 @@
+/* ==========================================================
+   DESIGN TOKENS
+   Paleta pensada a partir do próprio logo (hexágono + seta em
+   ascensão) e do universo de força/powerlifting: grafite escuro
+   como "ferro", bone/off-white como "giz", e um vermelho-brasa
+   como cor de progresso/energia - não o laranja-pêssego padrão
+   de IA, e sim um tom mais quente e saturado, puxado pro
+   vermelho, ligado a "ferro em brasa / esforço".
+   ========================================================== */
+:root {
+  --bg: #0e0f13;
+  --bg-alt: #16181f;
+  --surface: #f5f3ee;
+  --text: #f5f3ee;
+  --text-dark: #14151a;
+  --muted: #8b93a1;
+  --muted-dark: #5b6270;
+  --accent: #2f6fed;
+  --accent-dim: #1f4fb8;
+  --line: rgba(245, 243, 238, 0.12);
+  --line-dark: rgba(20, 21, 26, 0.12);
+
+  --font-display: "Oswald", "Arial Narrow", sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --container: 1120px;
+  --radius: 4px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin: 0 0 0.5em;
+  line-height: 1.1;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+/* Foco visível para acessibilidade / navegação por teclado */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.section {
+  padding: 96px 0;
+}
+
+.section--alt {
+  background: var(--bg-alt);
+}
+
+.section--light {
+  background: var(--surface);
+  color: var(--text-dark);
+}
+.section--light h1,
+.section--light h2,
+.section--light h3 {
+  color: var(--text-dark);
+}
+.section--light .muted {
+  color: var(--muted-dark);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.btn--primary {
+  background: var(--accent);
+  color: #fff;
+}
+.btn--primary:hover {
+  background: var(--accent-dim);
+  transform: translateY(-1px);
+}
+
+.btn--ghost {
+  background: transparent;
+  border-color: var(--line);
+  color: var(--text);
+}
+.btn--ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.section--light .btn--ghost {
+  border-color: var(--line-dark);
+  color: var(--text-dark);
+}
+
+.card {
+  background: var(--bg-alt);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 32px;
+}
+
+@media (max-width: 460px) {
+  .card {
+    padding: 20px 16px;
+  }
+}
+
+.section--light .card {
+  background: #fff;
+  border-color: var(--line-dark);
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
