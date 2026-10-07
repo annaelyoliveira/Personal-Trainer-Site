@@ -46,7 +46,7 @@ export const parceriaSuplementos = {
   descontoTexto: "Loja parceira, com desconto exclusivo para alunos do Patrick Lira",
   // Logo da loja: coloque a imagem em public/images/GA_logo.png
   // Se não existir, o site mostra um ícone no lugar automaticamente.
-  foto: "/images/GA_logo.png",
+  foto: "/images/GA_logo.jpeg",
   contato: {
     instagram: "@gasuplementospb",
     whatsappNumero: "558398964410", 
