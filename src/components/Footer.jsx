@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__inner">
         <div className="footer__brand">
-          <img src="/images/logo-dark.png" alt="Logo Patrick Lira" width="40" height="48" />
+          <img src="/images/logo-light.png" alt="Logo Patrick Lira" width="40" height="48" />
           <div>
             <strong>{site.nome}</strong>
             <span className="muted"> · {site.cargo}</span>

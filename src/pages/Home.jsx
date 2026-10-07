@@ -9,13 +9,13 @@ export default function Home() {
       <section className="hero">
         <div className="container hero__inner">
           <img
-            src="/images/logo-dark.png"
+            src="/images/logo-light.png"
             alt="Logo Patrick Lira - hexágono com seta ascendente"
             className="hero__logo"
             width="120"
             height="145"
           />
-          <p className="eyebrow">Preparador Físico · {site.cidade}</p>
+          <p className="eyebrow">Preparador Físico</p>
           <h1 className="hero__title">
             Treine com estratégia.
             <br />
