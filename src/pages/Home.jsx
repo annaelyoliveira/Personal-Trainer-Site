@@ -22,10 +22,8 @@ export default function Home() {
             Evolua com consistência.
           </h1>
           <p className="hero__lead muted">
-            Sou {site.nome}, treinador, atleta e apaixonado por ajudar pessoas a
-            alcançarem seus objetivos com estratégia, clareza e resultado. Este é o meu
-            espaço pessoal, com tudo sobre minha consultoria e soluções pensadas para
-            quem quer evoluir com consistência.
+            Sou {site.nome}, Bacharel em Educação Física. Pós-graduando em Treinamento de Força e Hipertrofia pela UFPR.
+            Este espaço contém tudo sobre meus trabalhos de consultoria.
           </p>
           <div className="hero__actions">
             <Link to="/consultoria-online" className="btn btn--primary">
