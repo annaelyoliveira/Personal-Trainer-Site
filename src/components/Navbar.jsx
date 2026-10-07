@@ -23,7 +23,7 @@ export default function Navbar() {
     <header className="navbar">
       <div className="container navbar__inner">
         <Link to="/" className="navbar__brand" aria-label="Página inicial - Patrick Lira">
-          <img src="/images/logo-light.png" alt="" width="34" height="41" />
+          <img src="/images/logo-dark.png" alt="Logo Patrick Lira" width="34" height="41" />
           <span>
             PATRICK <strong>LIRA</strong>
           </span>
