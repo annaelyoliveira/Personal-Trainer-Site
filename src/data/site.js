@@ -7,17 +7,15 @@
 export const site = {
   nome: "Patrick Lira",
   cargo: "Preparador Físico",
-  cref: "CREF em processo de emissão", // troque por "CREF 000000-G/PB" quando sair
+  cref: "CREF 014376-G/PB", 
   cidade: "Monteiro (PB)",
 
   contato: {
-    // Troque pelo número real, formato internacional sem espaços/símbolos:
-    // Ex: 55 83 9XXXX-XXXX -> "5583900000000"
     whatsappNumero: "5583998134796",
     whatsappMensagemPadrao:
       "Olá, Patrick! Vim pelo site e gostaria de saber mais sobre a consultoria.",
-    email: "contato@patricklira.com.br", // troque pelo e-mail real
-    instagram: "@patricklira", // troque pelo @ real
+    email: "patrickmateuslira@gmail.com", 
+    instagram: "@patricklira_treinador", 
   },
 };
 
